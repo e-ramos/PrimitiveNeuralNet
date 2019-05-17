@@ -50,6 +50,8 @@ As we can see from the above table, the Mean Square Error only marginally improv
 It it is clear that the higher complexity model, does a MUCH better job accounting for minute variations in the data parameters; recall that we are only using 2 (crime and tax rate) to predict value (shown here in the $10,000s) and the x axis is purely an index value. 
 The point here is that unlike standard regression, the NN can find highly non-linear relations between inputs and outputs at the cost of complexity. 
 
+Clearly, this is not an overfitting issue, since none of the samples shown in the plots below were used in the training. The non-linear variations in the high complexity model, in some sense, are "true". That is, the NN has picked out features in the training set that represent reality.
+
 | Low |High|
 |--|--|
 | ![](https://github.com/e-ramos/PrimitiveNeuralNet/blob/master/Output/TestPartitionLow.png)|![](https://github.com/e-ramos/PrimitiveNeuralNet/blob/master/Output/TestPartitionHigh.png)|
